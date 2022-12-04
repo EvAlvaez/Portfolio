@@ -1,0 +1,17 @@
+{% extends 'layouts/layout.html' %}
+{% load static %}
+
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+    <link href="{% static '/mainapp/css/nav.css' %}" rel="stylesheet" />
+    <h1>{{title}}</h1>
+
+    <div class="tecnologias">
+        <img src="/static/mainapp/img/html.png">
+        <img src="/static/mainapp/img/css.png">
+        <img src="/static/mainapp/img/python.png">
+        <img src="/static/mainapp/img/javas.png">
+        <img src="/static/mainapp/img/wordpress.png">
+    </div>
+{% endblock %}

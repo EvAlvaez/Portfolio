@@ -1,0 +1,47 @@
+{% extends 'layouts/layout.html' %}
+
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+
+  <img src="static/mainapp/img/pers.png" id="foto">
+
+    <script>
+        const nav = document.querySelector("nav"),
+            toggleBtn = nav.querySelector(".toggle-btn");
+
+        toggleBtn.addEventListener("click" , () =>{
+            nav.classList.toggle ("open");
+        });
+        
+        function evento(){
+            var imagen = document.getElementById("foto");
+
+            imagen.src = "static/mainapp/img/pers.png";
+        }
+
+        function evento1(){
+            var imagen = document.getElementById("foto");
+
+            imagen.src = "static/mainapp/img/pers.png";
+        }
+
+        function evento2(){
+            var imagen = document.getElementById("foto");
+
+            imagen.src = "static/mainapp/img/phabilidades.png";
+        }
+
+        function evento3(){
+            var imagen = document.getElementById("foto");
+
+            imagen.src = "static/mainapp/img/precorrido.png";
+        }
+
+        function evento4(){
+          var imagen = document.getElementById("foto");
+
+          imagen.src = "static/mainapp/img/pcontacto.png";
+      }
+    </script>
+{% endblock %}

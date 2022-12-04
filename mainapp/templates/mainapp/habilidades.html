@@ -1,0 +1,17 @@
+{% extends 'layouts/layout.html' %}
+{% load static %}
+
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+
+    <link href="{% static '/mainapp/css/nav.css' %}" rel="stylesheet" />
+    <h1>{{title}}</h1>
+
+    <img src="/static/mainapp/img/yo.jpg" id="yo">
+
+    <p>
+        Me llamo Eva y vivo en la ciudad de Vigo. Soy estudiante de ingeniería informática por la UNED.
+        Aficionada a los retos, me encanta resolver todo tipo de puzzles.
+    </p>
+{% endblock %}
